@@ -1,5 +1,5 @@
 import {getCapital} from "./fetchInfo.js";
-
+let count =0;
 const DOM = {
     franceContent: document.getElementById("contentFrance"),
     russiaContent: document.getElementById("contentRussia"),
@@ -17,19 +17,23 @@ DOM.fetchButton.onclick = function (){
 
 const fetchFrance = async () => {
     const result = await getCapital("france");
-    displayContent(DOM.franceContent, result);
+    count++;
+    displayContent(DOM.franceContent, `${result}, order: ${count}`);
 }
 const fetchRussia = async () => {
     const result = await getCapital("russia");
-    displayContent(DOM.russiaContent, result);
+    count++;
+    displayContent(DOM.russiaContent, `${result}, order: ${count}`);
 }
 const fetchGermany = async () => {
     const result = await getCapital("germany");
-    displayContent(DOM.germanyContent, result);
+    count++;
+    displayContent(DOM.germanyContent, `${result}, order: ${count}`);
 }
 const fetchSpain = async () => {
     const result = await getCapital("spain");
-    displayContent(DOM.spainContent, result);
+    count++;
+    displayContent(DOM.spainContent, `${result}, order: ${count}`);
 }
 
 const displayContent =(element, content)=>{
