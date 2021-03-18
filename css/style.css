@@ -1,0 +1,16 @@
+#content {
+    width:200px;
+    margin: 0 auto;
+}
+
+.country {
+    margin-bottom: 15px;
+    border: 1px solid grey;
+}
+
+.header{
+    height: 36px;
+    line-height:36px;
+    text-align: center;
+    background-color: antiquewhite;
+}

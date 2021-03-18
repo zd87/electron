@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My first Electron app!</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: white;">
+    <div id="content">
+        <h1>Capitals</h1>
+        <div id="france" class="country">
+            <div class="header">
+                France
+            </div>
+            <div id="contentFrance" class="contentCountry">Waiting...</div>
+        </div>
+        <div id="russia" class="country">
+            <div class="header">
+                Russia
+            </div>
+            <div id="contentRussia" class="contentCountry">Waiting...</div>
+        </div>
+        <div id="germany" class="country">
+            <div class="header">
+                Germany
+            </div>
+            <div id="contentGermany" class="contentCountry">Waiting...</div>
+        </div>
+        <div id="spain" class="country">
+            <div class="header">
+                Spain
+            </div>
+            <div id="contentSpain" class="contentCountry">Waiting...</div>
+        </div>
+        <button id="fetchAll">
+            Fetch All
+        </button>
+        
+    </div>
+	<script type="module" src="./js/index.js"></script>
+</body>
+</html>
